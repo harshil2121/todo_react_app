@@ -1,0 +1,277 @@
+.Toastify__toast-body {
+  width: -webkit-fill-available;
+}
+
+.Toastify__close-button {
+  width: max-content;
+}
+
+.main-bg {
+  background-color: aliceblue;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Login and Signup Form */
+
+.signin-continer {
+  margin: 100px 0px;
+}
+
+.login-signin-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(20, 51, 20, 0.1);
+  background-color: #ffffff;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-msg {
+  color: red;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+input[id="password"] input[id="confirmPassword"] {
+  top: 32%;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  top: 52%;
+  right: 10px;
+  cursor: pointer;
+}
+.toggle-password-btn.error-msg {
+  top: 75%;
+}
+
+.text {
+  word-break: break-all;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.signin-continer .error-msg .toggle-password-btn {
+  top: 52%;
+}
+
+.user-box {
+  margin-bottom: 30px;
+}
+
+textarea:focus-visible {
+  outline: 0;
+}
+textarea:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  outline: none;
+}
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.edit-delete-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.edit {
+  padding: 5px;
+  border-radius: 10px;
+}
+.edit:hover {
+  background-color: #e2e26f;
+}
+
+.delete {
+  padding: 5px;
+  border-radius: 10px;
+}
+.delete:hover {
+  background-color: #ff7c7c;
+}
+
+.form-select:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.task-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.task-card p {
+  margin: 5px 0;
+}
+
+.task-card button {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .task-card {
+    padding: 15px;
+    margin: 5px;
+  }
+
+  .task-card button {
+    margin: 5px 5px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+  .form-container h2 {
+    font-size: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
